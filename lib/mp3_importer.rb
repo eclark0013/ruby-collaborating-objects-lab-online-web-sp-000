@@ -9,7 +9,7 @@ class MP3Importer
 
 
   def files
-    messy_files=Dir.glob("#{@path}/*.mp3")
+    messy_files = Dir.glob("#{@path}/*.mp3")
     subst = "./spec/fixtures/mp3s/"
     clean_files = []
     messy_files.each do |messy_file|
